@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Estimate Request | Forge & Frame Contracting Salt Lake City</title>
+    <meta name="description" content="Request an estimate or schedule an on-site project consultation with Forge & Frame Contracting in Salt Lake City, Utah.">
+    <link rel="canonical" href="contact.html">
+
+    <!-- Fonts & CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="custom-cursor" id="customCursor"></div>
+
+    <!-- Header Navigation -->
+    <header class="site-header scrolled" id="siteHeader">
+        <div class="container header-inner">
+            <a href="index.html" class="brand-logo" aria-label="Forge & Frame Contracting Home">
+                <img src="images/logo.png" alt="Forge & Frame Contracting Logo" width="52" height="52">
+                <div class="brand-text">
+                    <span class="brand-name">FORGE & FRAME</span>
+                    <span class="brand-sub">CONTRACTING</span>
+                </div>
+            </a>
+
+            <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="index.html#process" class="nav-link">Process</a></li>
+                    <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:+18015550198" class="btn btn-outline btn-sm">(801) 555-0198</a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu-inner">
+            <nav>
+                <ul class="mobile-nav-list">
+                    <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                    <li><a href="index.html#services" class="mobile-nav-link">Services</a></li>
+                    <li><a href="projects.html" class="mobile-nav-link">Projects</a></li>
+                    <li><a href="index.html#process" class="mobile-nav-link">Process</a></li>
+                    <li><a href="index.html#faq" class="mobile-nav-link">FAQ</a></li>
+                    <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Page Title -->
+    <section class="page-hero dark-bg">
+        <div class="container">
+            <span class="section-label">START A CONVERSATION</span>
+            <h1 class="page-title">LET'S TALK ABOUT YOUR PROJECT.</h1>
+            <p class="page-lead">Tell us about your home and your goals. We respond to all inquiry forms within one business day.</p>
+        </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="section contact-section">
+        <div class="container">
+            <div class="grid grid-contact">
+                <!-- Form Column -->
+                <div class="contact-form-wrapper">
+                    <h2 class="form-title">Project Consultation Request</h2>
+                    <p class="form-sub">Please fill out the details below to help us understand your vision.</p>
+
+                    <form id="contactForm" class="contact-form" action="mailto:info@forgeandframecontracting.com" method="post" enctype="text/plain">
+                        <div class="form-row grid-2-form">
+                            <div class="form-group">
+                                <label for="fullName">Full Name <span class="req">*</span></label>
+                                <input type="text" id="fullName" name="fullName" class="form-control" placeholder="e.g. Eleanor Vance" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number <span class="req">*</span></label>
+                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="(801) 000-0000" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row grid-2-form">
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="req">*</span></label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="eleanor@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="propertyLocation">Project Neighborhood / City <span class="req">*</span></label>
+                                <input type="text" id="propertyLocation" name="propertyLocation" class="form-control" placeholder="e.g. Sugar House, Salt Lake City" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row grid-2-form">
+                            <div class="form-group">
+                                <label for="projectType">Primary Scope <span class="req">*</span></label>
+                                <select id="projectType" name="projectType" class="form-control" required>
+                                    <option value="" disabled selected>Select project category...</option>
+                                    <option value="Whole-Home Remodel">Whole-Home Remodeling</option>
+                                    <option value="Kitchen Remodel">Kitchen Remodel</option>
+                                    <option value="Bathroom Remodel">Bathroom Remodel</option>
+                                    <option value="Home Addition">Home Addition</option>
+                                    <option value="Custom Carpentry">Custom Carpentry</option>
+                                    <option value="Outdoor Living">Outdoor Living / Deck</option>
+                                    <option value="Exterior Renovation">Exterior Renovation</option>
+                                    <option value="Custom New Build">Custom New Build</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="estimatedBudget">Target Investment Range <span class="req">*</span></label>
+                                <select id="estimatedBudget" name="estimatedBudget" class="form-control" required>
+                                    <option value="" disabled selected>Select budget range...</option>
+                                    <option value="$30,000 - $50,000">$30,000 to $50,000</option>
+                                    <option value="$50,000 - $100,000">$50,000 to $100,000</option>
+                                    <option value="$100,000 - $200,000">$100,000 to $200,000</option>
+                                    <option value="$200,000+">$200,000+</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="projectDescription">Project Details & Objectives <span class="req">*</span></label>
+                            <textarea id="projectDescription" name="projectDescription" rows="5" class="form-control" placeholder="Describe the current space, desired structural changes, ideal timeline, and any specific materials you have in mind..." required></textarea>
+                        </div>
+
+                        <div class="form-submit-wrapper">
+                            <button type="submit" class="btn btn-primary btn-full btn-lg">
+                                <span>REQUEST AN ESTIMATE</span>
+                            </button>
+                        </div>
+
+                        <div class="form-notice" id="formNotice">
+                            <p>Submitting generates an inquiry directly to our Salt Lake estimator. We respect your privacy and never share your contact details.</p>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Info Column -->
+                <div class="contact-info-wrapper">
+                    <div class="info-card dark-bg">
+                        <span class="section-label">DIRECT CONTACT</span>
+                        <h3 class="info-title">Forge & Frame Contracting</h3>
+                        
+                        <div class="info-item">
+                            <span class="info-label">PHONE</span>
+                            <p class="info-val"><a href="tel:+18015550198">(801) 555-0198</a></p>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-label">EMAIL</span>
+                            <p class="info-val"><a href="mailto:info@forgeandframecontracting.com">info@forgeandframecontracting.com</a></p>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-label">PRIMARY SERVICE REGION</span>
+                            <p class="info-val">Salt Lake City, Sugar House, Harvard-Yale, Avenues, Holladay, Millcreek, Cottonwood Heights, Sandy, Draper, Park City.</p>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-label">WORKING HOURS</span>
+                            <p class="info-val">Monday through Friday: 7:30 AM to 5:00 PM<br>Saturday & Sunday: Closed for field resting</p>
+                        </div>
+
+                        <div class="info-license-badge">
+                            <strong>UTAH GENERAL CONTRACTOR</strong>
+                            <span>Licensed • Bonded • Fully Insured</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Forge & Frame Contracting LLC. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="index.html">Home</a>
+                    <span class="sep">•</span>
+                    <a href="projects.html">Projects</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>

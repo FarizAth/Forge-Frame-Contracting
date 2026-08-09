@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio & Project Gallery | Forge & Frame Contracting Salt Lake City</title>
+    <meta name="description" content="Explore selected residential remodels, kitchen renovations, custom additions, and architectural carpentry by Forge & Frame Contracting in Salt Lake City, Utah.">
+    <link rel="canonical" href="projects.html">
+
+    <!-- Fonts & CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="custom-cursor" id="customCursor"></div>
+
+    <!-- Header Navigation -->
+    <header class="site-header scrolled" id="siteHeader">
+        <div class="container header-inner">
+            <a href="index.html" class="brand-logo" aria-label="Forge & Frame Contracting Home">
+                <img src="images/logo.png" alt="Forge & Frame Contracting Logo" width="52" height="52">
+                <div class="brand-text">
+                    <span class="brand-name">FORGE & FRAME</span>
+                    <span class="brand-sub">CONTRACTING</span>
+                </div>
+            </a>
+
+            <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="index.html#process" class="nav-link">Process</a></li>
+                    <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="contact.html" class="btn btn-primary btn-sm">GET AN ESTIMATE</a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu-inner">
+            <nav>
+                <ul class="mobile-nav-list">
+                    <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                    <li><a href="index.html#services" class="mobile-nav-link">Services</a></li>
+                    <li><a href="projects.html" class="mobile-nav-link">Projects</a></li>
+                    <li><a href="index.html#process" class="mobile-nav-link">Process</a></li>
+                    <li><a href="index.html#faq" class="mobile-nav-link">FAQ</a></li>
+                    <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-cta">
+                <a href="contact.html" class="btn btn-primary btn-full">START YOUR PROJECT</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inner Hero -->
+    <section class="page-hero dark-bg">
+        <div class="container">
+            <span class="section-label">PORTFOLIO OF WORK</span>
+            <h1 class="page-title">OUR WORK</h1>
+            <p class="page-lead">Selected residential remodels, additions, and architectural transformations executed across Salt Lake City and surrounding neighborhoods.</p>
+        </div>
+    </section>
+
+    <!-- Filter & Project Gallery -->
+    <section class="section gallery-section">
+        <div class="container">
+            <!-- Filter Controls -->
+            <div class="filter-bar" id="filterBar">
+                <button class="filter-btn active" data-filter="all">ALL PROJECTS</button>
+                <button class="filter-btn" data-filter="remodeling">REMODELING</button>
+                <button class="filter-btn" data-filter="kitchens">KITCHENS</button>
+                <button class="filter-btn" data-filter="bathrooms">BATHROOMS</button>
+                <button class="filter-btn" data-filter="additions">ADDITIONS</button>
+                <button class="filter-btn" data-filter="exterior">EXTERIOR</button>
+            </div>
+
+            <!-- Grid -->
+            <div class="projects-gallery-grid" id="projectsGrid">
+                <!-- Project 1 -->
+                <article class="project-gallery-item" data-category="remodeling">
+                    <div class="gallery-card-inner">
+                        <div class="gallery-visual">
+                            <img src="images/projects/project-1-remodel.png" alt="Mid-Century Layout Modernization" class="project-card-img">
+                            <span class="gallery-category">REMODELING</span>
+                        </div>
+                        <div class="gallery-details">
+                            <span class="gallery-loc">HARVARD-YALE • SALT LAKE CITY</span>
+                            <h2 class="gallery-title">Mid-Century Layout Modernization</h2>
+                            <p class="gallery-desc">Opened up enclosed formal dining and kitchen spaces into a cohesive continuous living level with custom white oak finishes.</p>
+                            <div class="gallery-actions">
+                                <button class="btn btn-sm btn-outline open-modal-btn" 
+                                        data-title="Mid-Century Layout Modernization"
+                                        data-location="Harvard-Yale, Salt Lake City"
+                                        data-scope="Whole-Home Remodel ($180,000)"
+                                        data-duration="14 Weeks"
+                                        data-details="This project involved removing two load-bearing brick walls and installing a 22-foot concealed steel beam. We installed rift-sawn white oak flooring throughout, updated electrical service to 200 amps, and integrated custom recessed architectural LED lighting.">
+                                    VIEW DETAILS
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-gallery-item" data-category="kitchens">
+                    <div class="gallery-card-inner">
+                        <div class="gallery-visual">
+                            <img src="images/projects/project-2-kitchen.png" alt="Custom Cabinetry & Island Kitchen" class="project-card-img">
+                            <span class="gallery-category">KITCHEN</span>
+                        </div>
+                        <div class="gallery-details">
+                            <span class="gallery-loc">HOLLADAY • UTAH</span>
+                            <h2 class="gallery-title">Custom Cabinetry & Island Kitchen</h2>
+                            <p class="gallery-desc">Features hand-built inset cabinetry, taj mahal quartzite counter slabs, and a dedicated butler pantry pass-through.</p>
+                            <div class="gallery-actions">
+                                <button class="btn btn-sm btn-outline open-modal-btn"
+                                        data-title="Custom Cabinetry & Island Kitchen"
+                                        data-location="Holladay, Utah"
+                                        data-scope="Kitchen Remodel ($85,000)"
+                                        data-duration="6 Weeks"
+                                        data-details="Complete demolition of 1980s oak cabinetry. We re-routed plumbing lines to accommodate a 10-foot central island with waterfall quartz edges, installed panel-ready appliances, and built custom pantry storage.">
+                                    VIEW DETAILS
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-gallery-item" data-category="additions">
+                    <div class="gallery-card-inner">
+                        <div class="gallery-visual">
+                            <img src="images/projects/project-3-addition.png" alt="Primary Suite & Covered Patio Addition" class="project-card-img">
+                            <span class="gallery-category">ADDITIONS</span>
+                        </div>
+                        <div class="gallery-details">
+                            <span class="gallery-loc">MILLCREEK • UTAH</span>
+                            <h2 class="gallery-title">Primary Suite & Covered Patio Addition</h2>
+                            <p class="gallery-desc">Added 650 square feet of conditioned living space including a walk-in wardrobe, tile suite, and vaulted timber outdoor porch.</p>
+                            <div class="gallery-actions">
+                                <button class="btn btn-sm btn-outline open-modal-btn"
+                                        data-title="Primary Suite & Covered Patio Addition"
+                                        data-location="Millcreek, Utah"
+                                        data-scope="Main Floor Addition ($145,000)"
+                                        data-duration="10 Weeks"
+                                        data-details="Poured continuous concrete footings matching existing foundation depth. Structural framing included a scissor-truss ceiling profile for extra volume, topped with a standing seam metal roofing accent.">
+                                    VIEW DETAILS
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-gallery-item" data-category="bathrooms">
+                    <div class="gallery-card-inner">
+                        <div class="gallery-visual">
+                            <img src="images/projects/project-4-bathroom.png" alt="Spa Bath with Curbless Tile Shower" class="project-card-img">
+                            <span class="gallery-category">BATHROOM</span>
+                        </div>
+                        <div class="gallery-details">
+                            <span class="gallery-loc">SUGAR HOUSE • SALT LAKE CITY</span>
+                            <h2 class="gallery-title">Spa Bath with Curbless Tile Shower</h2>
+                            <p class="gallery-desc">Transformed an oversized bath area into a curbless walk-in shower with radiant heated flooring and custom floating vanity.</p>
+                            <div class="gallery-actions">
+                                <button class="btn btn-sm btn-outline open-modal-btn"
+                                        data-title="Spa Bath with Curbless Tile Shower"
+                                        data-location="Sugar House, Salt Lake City"
+                                        data-scope="Bathroom Renovation ($42,000)"
+                                        data-duration="4 Weeks"
+                                        data-details="Recessed shower floor framing for true zero-transition entry. Waterproofed with Schluter Kerdi membrane system, floor-to-ceiling large format porcelain tile, and dual thermostatic shower valves.">
+                                    VIEW DETAILS
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-gallery-item" data-category="exterior">
+                    <div class="gallery-card-inner">
+                        <div class="gallery-visual">
+                            <img src="images/projects/project-5-exterior.png" alt="Fiber Cement & Timber Siding Upgrade" class="project-card-img">
+                            <span class="gallery-category">EXTERIOR</span>
+                        </div>
+                        <div class="gallery-details">
+                            <span class="gallery-loc">COTTONWOOD HEIGHTS • UTAH</span>
+                            <h2 class="gallery-title">Fiber Cement & Timber Siding Upgrade</h2>
+                            <p class="gallery-desc">Replaced worn aluminum siding with high-durability fiber cement panels and warm cedar accent trim around entranceways.</p>
+                            <div class="gallery-actions">
+                                <button class="btn btn-sm btn-outline open-modal-btn"
+                                        data-title="Fiber Cement & Timber Siding Upgrade"
+                                        data-location="Cottonwood Heights, Utah"
+                                        data-scope="Exterior Renovation ($58,000)"
+                                        data-duration="3 Weeks"
+                                        data-details="Complete strip of original exterior wrap, installation of rain-screen barrier system, James Hardie lap siding, black aluminum trim reveals, and custom cedar soffit lighting.">
+                                    VIEW DETAILS
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="project-gallery-item" data-category="remodeling">
+                    <div class="gallery-card-inner">
+                        <div class="gallery-visual">
+                            <img src="images/projects/project-6-mountain.png" alt="Mountain Modern Interior Overhaul" class="project-card-img">
+                            <span class="gallery-category">REMODELING</span>
+                        </div>
+                        <div class="gallery-details">
+                            <span class="gallery-loc">PARK CITY • UTAH</span>
+                            <h2 class="gallery-title">Mountain Modern Interior Overhaul</h2>
+                            <p class="gallery-desc">Refreshed a high-ceiling residential interior with dark steel fireplace accents, custom oak stair treads, and new glazing.</p>
+                            <div class="gallery-actions">
+                                <button class="btn btn-sm btn-outline open-modal-btn"
+                                        data-title="Mountain Modern Interior Overhaul"
+                                        data-location="Park City, Utah"
+                                        data-scope="Interior Overhaul ($210,000)"
+                                        data-duration="12 Weeks"
+                                        data-details="Stripped outdated drywall wraps, fabricated custom blackened steel fireplace surround, installed architectural cable railing, and upgraded energy performance with triple-pane windows.">
+                                    VIEW DETAILS
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Detailed View -->
+    <div class="project-modal" id="projectModal" aria-hidden="true" role="dialog">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close details modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-loc" id="modalLoc">LOCATION</span>
+                <h3 class="modal-title" id="modalTitle">Project Title</h3>
+            </div>
+            <div class="modal-body">
+                <div class="modal-meta-grid">
+                    <div>
+                        <strong>Project Scope</strong>
+                        <span id="modalScope">Scope info</span>
+                    </div>
+                    <div>
+                        <strong>Duration</strong>
+                        <span id="modalDuration">Duration info</span>
+                    </div>
+                </div>
+                <div class="modal-text">
+                    <h4>Execution & Details</h4>
+                    <p id="modalDetails">Detailed information regarding the project build process.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="contact.html" class="btn btn-primary">DISCUSS A SIMILAR PROJECT</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final CTA Banner -->
+    <section class="section cta-banner-section dark-bg">
+        <div class="container">
+            <div class="cta-banner-box">
+                <div class="cta-content">
+                    <span class="section-label">START YOUR PROJECT</span>
+                    <h2 style="color: #121417;">Have a project in mind for your home?</h2>
+                    <p style="color: #4A4E57;">We are currently booking initial project consultations across Salt Lake City.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="contact.html" class="btn btn-primary btn-lg">REQUEST AN ESTIMATE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Forge & Frame Contracting LLC. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="index.html">Home</a>
+                    <span class="sep">•</span>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
